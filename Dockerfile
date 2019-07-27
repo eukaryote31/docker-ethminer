@@ -26,7 +26,7 @@ RUN apt-get update \
      build-essential
 
 # Git repo set up
-RUN git clone https://github.com/ethereum-mining/ethminer.git; \
+RUN git clone --recursive https://github.com/ethereum-mining/ethminer.git; \
     cd ethminer; \
     git checkout tags/v0.18.0 
 
